@@ -98,40 +98,6 @@ class _MyAppState extends State<MyApp> {
     await engine.enableVideo();
     await engine.joinChannel(null, '909090', "");//userId = ""时 sdk会自动生成一个
   }
-  // List<Widget> Boxs() => List.generate(16, (index) {
-  //   return MaterialApp(
-  //     home: Builder(
-  //       builder: (context) => Scaffold(
-  //         body: Stack(
-  //           children: [
-  //             Wrap(
-  //               spacing: 2,
-  //               runSpacing: 5,
-  //               children: Boxs(),
-  //             ),
-  //             Align(
-  //               alignment: Alignment.topLeft,
-  //               child: Container(
-  //                 color: Colors.blue,
-  //                 child: GestureDetector(
-  //                   onTap: () {
-  //                     setState(() {
-  //                       _switch = !_switch;
-  //                     });
-  //                   },
-  //                   child: Center(
-  //                     child:
-  //                     _switch ? _renderLocalPreview() : _renderRemoteVideo(),
-  //                   ),
-  //                 ),
-  //               ),
-  //             ),
-  //           ],
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // });
 
   @override
   Widget build(BuildContext context) {
